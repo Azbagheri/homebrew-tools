@@ -7,7 +7,7 @@ class Gitrise < Formula
   bottle :unneeded
 
   def install
-    system "make", "install", "INSTALL_DIR=#{prefix}/bin"
+    bin.install "gitrise.sh"
   end
   
   test do
